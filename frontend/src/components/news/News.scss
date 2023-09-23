@@ -1,0 +1,47 @@
+.news {
+  height: 100%;
+  background-color: lightskyblue;
+
+  .newsContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    margin: auto;
+
+    h1 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    p {
+      line-height: 1.5;
+    }
+    form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+
+      input {
+        outline: none;
+        border-radius: 10px;
+        padding: 10px 50px;
+        border: 1px solid lightgray;
+      }
+      button {
+        border: none;
+        font-size: 18px;
+        padding: 10px 20px;
+        width: max-content;
+        border-radius: 10px;
+        background-color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

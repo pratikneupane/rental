@@ -1,0 +1,103 @@
+.navBar {
+  height: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 998;
+  background-color: white;
+
+  .navBarComponent {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+
+    .left {
+      h1 {
+        font-size: 30px;
+        font-weight: 800;
+        cursor: pointer;
+      }
+    }
+    .middle {
+      display: flex;
+      gap: 20px;
+
+      span {
+        font-size: 18px;
+        cursor: pointer;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      position: relative;
+
+      .userImg {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+          cursor: pointer;
+        }
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        p {
+          cursor: pointer;
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+      }
+
+      .dropMenu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 50px;
+        right: 5px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: white;
+        border: 1px solid hsla(0, 1%, 50%, 0.2);
+        box-shadow: 0 0 20px 0 hsla(0, 1%, 50%, 0.2);
+
+        hr {
+          width: 100%;
+          height: 0;
+          color: lightgray;
+        }
+
+        p {
+          cursor: pointer;
+        }
+      }
+
+      span {
+        background-color: white;
+        padding: 10px 20px;
+        border: 1px solid lightskyblue;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:last-child {
+          background-color: lightskyblue;
+        }
+      }
+    }
+  }
+}

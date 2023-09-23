@@ -1,0 +1,61 @@
+.testimonial {
+  height: 100%;
+
+  .tContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 20px;
+    margin: auto;
+
+    h1 {
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .tContainerList {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      padding-top: 50px;
+
+      .tContainerListItem {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 10px;
+        transition: 0.5s ease-in-out;
+        border: 1px solid hsla(0, 1%, 50%, 0.2);
+        box-shadow: 0 0 20px 0 hsla(0, 1%, 50%, 0.2);
+
+        &:hover {
+          transform: translateY(5px);
+          background-color: lightskyblue;
+        }
+
+        .tListItem {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          h1 {
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 1.5;
+          }
+          span {
+            line-height: 1.5;
+          }
+        }
+        p {
+          color: gray;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.about {
+  height: 100%;
+  background-color: lightskyblue;
+
+  .aboutContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    margin: auto;
+    gap: 50px;
+
+    .left {
+      img {
+        width: 500px;
+        height: 350px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      h1 {
+        font-size: 30px;
+        font-weight: 500;
+      }
+
+      p {
+        line-height: 1.5;
+        color: gray;
+      }
+      button {
+        border: none;
+        font-size: 18px;
+        padding: 10px 20px;
+        width: max-content;
+        border-radius: 10px;
+        background-color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

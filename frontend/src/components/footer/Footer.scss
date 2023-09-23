@@ -1,0 +1,74 @@
+.footer {
+  height: 100%;
+
+  .footerContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px 5px;
+    margin: auto;
+    gap: 30px;
+
+    hr {
+      height: 0;
+      width: 100%;
+      color: lightgray;
+    }
+    .fContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .fContainerList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        h1 {
+          font-size: 30px;
+          font-weight: 500;
+          line-height: 1.5;
+        }
+        span {
+          line-height: 1.5;
+          color: gray;
+          cursor: pointer;
+        }
+      }
+    }
+    .footerList {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        h1 {
+          font-size: 30px;
+          font-weight: 800;
+          cursor: pointer;
+        }
+
+        span {
+          color: gray;
+        }
+      }
+      .item {
+        display: flex;
+        gap: 20px;
+
+        .iconBrand {
+          font-size: 30px;
+          color: gray;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

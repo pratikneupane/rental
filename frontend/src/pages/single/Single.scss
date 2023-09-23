@@ -1,0 +1,40 @@
+.single {
+  height: 100%;
+
+  .singleContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    margin: auto;
+
+    .imageContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      img {
+        height: 500px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+    .location {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    button {
+      border: none;
+      font-size: 18px;
+      padding: 10px 20px;
+      width: max-content;
+      border-radius: 10px;
+      background-color: lightskyblue;
+      cursor: pointer;
+    }
+  }
+}
